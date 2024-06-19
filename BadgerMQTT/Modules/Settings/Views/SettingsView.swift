@@ -9,8 +9,11 @@ import SwiftUI
 
 struct SettingsView: View {
     @State var brokerAddress: String = ""
+    @State var topic: String = ""
     @EnvironmentObject private var mqttManager: MQTTManager
+    
     var body: some View {
+        
         VStack {
             ConnectionStatusBar(message: mqttManager.connectionStateMessage(), isConnected: mqttManager.isConnected())
             MQTTTextField(placeHolderMessage: "Enter broker Address", isDisabled: mqttManager.currentAppState.appConnectionState != .disconnected, message: $brokerAddress)
@@ -20,6 +23,15 @@ struct SettingsView: View {
                 setUpDisconnectButton()
             }
             .padding()
+            HStack {
+                MQTTTextField(placeHolderMessage: "Enter a topic to subscribe", isDisabled: !mqttManager.isConnected() || mqttManager.isSubscribed(), message: $topic)
+                Button(action: functionFor(state: mqttManager.currentAppState.appConnectionState)) {
+                    Text(titleForSubscribButtonFrom(state: mqttManager.currentAppState.appConnectionState))
+                        .font(.system(size: 14.0))
+                }.buttonStyle(BaseButtonStyle(foreground: .white, background: .green))
+                    .frame(width: 100)
+                    .disabled(!mqttManager.isConnected() || topic.isEmpty)
+            }
             Spacer()
         }
         .navigationTitle("Settings")
@@ -49,6 +61,32 @@ struct SettingsView: View {
 
     private func disconnect() {
         mqttManager.disconnect()
+    }
+    
+    private func subscribe(topic: String) {
+        mqttManager.subscribe(topic: topic)
+    }
+
+    private func usubscribe() {
+        mqttManager.unSubscribeFromCurrentTopic()
+    }
+    
+    private func titleForSubscribButtonFrom(state: MQTTAppConnectionState) -> String {
+        switch state {
+        case .connected, .connectedUnSubscribed, .disconnected, .connecting:
+            return "Subscribe"
+        case .connectedSubscribed:
+            return "Unsubscribe"
+        }
+    }
+    
+    private func functionFor(state: MQTTAppConnectionState) -> () -> Void {
+        switch state {
+        case .connected, .connectedUnSubscribed, .disconnected, .connecting:
+            return { subscribe(topic: topic) }
+        case .connectedSubscribed:
+            return { usubscribe() }
+        }
     }
 }
 

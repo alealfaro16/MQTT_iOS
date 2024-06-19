@@ -3,10 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D0106E82C20B9DF00462FA1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4D0106E72C20B9DF00462FA1 /* SwiftyJSON */; };
+		4DA6B6682C20C58100A1592A /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6672C20C58100A1592A /* EKEventStore+AsyncFetch.swift */; };
+		4DA6B66A2C20C5A600A1592A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6692C20C5A600A1592A /* AppError.swift */; };
+		4DA6B66E2C20C60200A1592A /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B66B2C20C60200A1592A /* Reminder+EKReminder.swift */; };
+		4DA6B66F2C20C60200A1592A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B66C2C20C60200A1592A /* Reminder.swift */; };
+		4DA6B6702C20C60200A1592A /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B66D2C20C60200A1592A /* ReminderStore.swift */; };
+		4DA6B6722C20C85400A1592A /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6712C20C85400A1592A /* ReminderListView.swift */; };
+		4DA6B6742C20E92C00A1592A /* MQTTManager + Badger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6732C20E92C00A1592A /* MQTTManager + Badger.swift */; };
+		4DA6B6762C22404500A1592A /* CalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6752C22404500A1592A /* CalEvent.swift */; };
+		4DA6B6782C22414D00A1592A /* CalEvent + EKEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6772C22414D00A1592A /* CalEvent + EKEvent.swift */; };
+		4DA6B67A2C2244BD00A1592A /* SyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B6792C2244BD00A1592A /* SyncView.swift */; };
+		4DA6B67C2C2245E100A1592A /* CalEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA6B67B2C2245E100A1592A /* CalEventListView.swift */; };
 		7618093B29E80E75008AABF0 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 7618093A29E80E75008AABF0 /* CocoaMQTT */; };
 		76B88D5A268B571D0098185D /* BaseButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B88D59268B571D0098185D /* BaseButtonStyle.swift */; };
 		76B88D5C268B7DCC0098185D /* ConnectionStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B88D5B268B7DCC0098185D /* ConnectionStatusBar.swift */; };
@@ -41,20 +53,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DA6B6672C20C58100A1592A /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
+		4DA6B6692C20C5A600A1592A /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		4DA6B66B2C20C60200A1592A /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
+		4DA6B66C2C20C60200A1592A /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		4DA6B66D2C20C60200A1592A /* ReminderStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		4DA6B6712C20C85400A1592A /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		4DA6B6732C20E92C00A1592A /* MQTTManager + Badger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MQTTManager + Badger.swift"; sourceTree = "<group>"; };
+		4DA6B6752C22404500A1592A /* CalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalEvent.swift; sourceTree = "<group>"; };
+		4DA6B6772C22414D00A1592A /* CalEvent + EKEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CalEvent + EKEvent.swift"; sourceTree = "<group>"; };
+		4DA6B6792C2244BD00A1592A /* SyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncView.swift; sourceTree = "<group>"; };
+		4DA6B67B2C2245E100A1592A /* CalEventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalEventListView.swift; sourceTree = "<group>"; };
 		76B88D59268B571D0098185D /* BaseButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButtonStyle.swift; sourceTree = "<group>"; };
 		76B88D5B268B7DCC0098185D /* ConnectionStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStatusBar.swift; sourceTree = "<group>"; };
 		76C85F97269A0852007BDB95 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		76C85F99269CB5C4007BDB95 /* MQTTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTTextField.swift; sourceTree = "<group>"; };
-		76E2F52825B71BDD00237134 /* SwiftUI_MQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_MQTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E2F52825B71BDD00237134 /* BadgerMQTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadgerMQTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E2F52B25B71BDD00237134 /* SwiftUI_MQTTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MQTTApp.swift; sourceTree = "<group>"; };
 		76E2F52D25B71BDD00237134 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		76E2F52F25B71BDE00237134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E2F53225B71BDE00237134 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76E2F53425B71BDE00237134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E2F53925B71BDE00237134 /* SwiftUI_MQTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_MQTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E2F53925B71BDE00237134 /* BadgerMQTTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgerMQTTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E2F53D25B71BDE00237134 /* SwiftUI_MQTTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MQTTTests.swift; sourceTree = "<group>"; };
 		76E2F53F25B71BDE00237134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E2F54425B71BDE00237134 /* SwiftUI_MQTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_MQTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E2F54425B71BDE00237134 /* BadgerMQTTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgerMQTTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E2F54825B71BDE00237134 /* SwiftUI_MQTTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MQTTUITests.swift; sourceTree = "<group>"; };
 		76E2F54A25B71BDE00237134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E2F55C25B71DCD00237134 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
@@ -67,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0106E82C20B9DF00462FA1 /* SwiftyJSON in Frameworks */,
 				7618093B29E80E75008AABF0 /* CocoaMQTT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +112,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D0106E62C20B9DF00462FA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		76B88D57268B56FA0098185D /* Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,24 +138,25 @@
 		76E2F51F25B71BDD00237134 = {
 			isa = PBXGroup;
 			children = (
-				76E2F52A25B71BDD00237134 /* SwiftUI_MQTT */,
-				76E2F53C25B71BDE00237134 /* SwiftUI_MQTTTests */,
-				76E2F54725B71BDE00237134 /* SwiftUI_MQTTUITests */,
+				76E2F52A25B71BDD00237134 /* BadgerMQTT */,
+				76E2F53C25B71BDE00237134 /* BadgerMQTTTests */,
+				76E2F54725B71BDE00237134 /* BadgerMQTTUITests */,
 				76E2F52925B71BDD00237134 /* Products */,
+				4D0106E62C20B9DF00462FA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		76E2F52925B71BDD00237134 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76E2F52825B71BDD00237134 /* SwiftUI_MQTT.app */,
-				76E2F53925B71BDE00237134 /* SwiftUI_MQTTTests.xctest */,
-				76E2F54425B71BDE00237134 /* SwiftUI_MQTTUITests.xctest */,
+				76E2F52825B71BDD00237134 /* BadgerMQTT.app */,
+				76E2F53925B71BDE00237134 /* BadgerMQTTTests.xctest */,
+				76E2F54425B71BDE00237134 /* BadgerMQTTUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76E2F52A25B71BDD00237134 /* SwiftUI_MQTT */ = {
+		76E2F52A25B71BDD00237134 /* BadgerMQTT */ = {
 			isa = PBXGroup;
 			children = (
 				76E9C20B25B87A2900ABC54D /* Modules */,
@@ -134,7 +166,7 @@
 				76E2F53425B71BDE00237134 /* Info.plist */,
 				76E2F53125B71BDE00237134 /* Preview Content */,
 			);
-			path = SwiftUI_MQTT;
+			path = BadgerMQTT;
 			sourceTree = "<group>";
 		};
 		76E2F53125B71BDE00237134 /* Preview Content */ = {
@@ -145,22 +177,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		76E2F53C25B71BDE00237134 /* SwiftUI_MQTTTests */ = {
+		76E2F53C25B71BDE00237134 /* BadgerMQTTTests */ = {
 			isa = PBXGroup;
 			children = (
 				76E2F53D25B71BDE00237134 /* SwiftUI_MQTTTests.swift */,
 				76E2F53F25B71BDE00237134 /* Info.plist */,
 			);
-			path = SwiftUI_MQTTTests;
+			path = BadgerMQTTTests;
 			sourceTree = "<group>";
 		};
-		76E2F54725B71BDE00237134 /* SwiftUI_MQTTUITests */ = {
+		76E2F54725B71BDE00237134 /* BadgerMQTTUITests */ = {
 			isa = PBXGroup;
 			children = (
 				76E2F54825B71BDE00237134 /* SwiftUI_MQTTUITests.swift */,
 				76E2F54A25B71BDE00237134 /* Info.plist */,
 			);
-			path = SwiftUI_MQTTUITests;
+			path = BadgerMQTTUITests;
 			sourceTree = "<group>";
 		};
 		76E2F55925B71D2300237134 /* Core */ = {
@@ -177,7 +209,14 @@
 		76E2F55A25B71D3600237134 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4DA6B66C2C20C60200A1592A /* Reminder.swift */,
+				4DA6B66B2C20C60200A1592A /* Reminder+EKReminder.swift */,
+				4DA6B66D2C20C60200A1592A /* ReminderStore.swift */,
+				4DA6B6692C20C5A600A1592A /* AppError.swift */,
+				4DA6B6672C20C58100A1592A /* EKEventStore+AsyncFetch.swift */,
 				76E2F56425B72C4B00237134 /* MQTTAppState.swift */,
+				4DA6B6752C22404500A1592A /* CalEvent.swift */,
+				4DA6B6772C22414D00A1592A /* CalEvent + EKEvent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				76E2F55C25B71DCD00237134 /* MQTTManager.swift */,
+				4DA6B6732C20E92C00A1592A /* MQTTManager + Badger.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,6 +261,9 @@
 				76B88D5B268B7DCC0098185D /* ConnectionStatusBar.swift */,
 				76C85F97269A0852007BDB95 /* TextView.swift */,
 				76C85F99269CB5C4007BDB95 /* MQTTTextField.swift */,
+				4DA6B6712C20C85400A1592A /* ReminderListView.swift */,
+				4DA6B6792C2244BD00A1592A /* SyncView.swift */,
+				4DA6B67B2C2245E100A1592A /* CalEventListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76E2F52725B71BDD00237134 /* SwiftUI_MQTT */ = {
+		76E2F52725B71BDD00237134 /* BadgerMQTT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E2F54D25B71BDE00237134 /* Build configuration list for PBXNativeTarget "SwiftUI_MQTT" */;
+			buildConfigurationList = 76E2F54D25B71BDE00237134 /* Build configuration list for PBXNativeTarget "BadgerMQTT" */;
 			buildPhases = (
 				76E2F52425B71BDD00237134 /* Sources */,
 				76E2F52525B71BDD00237134 /* Frameworks */,
@@ -248,17 +291,18 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUI_MQTT;
+			name = BadgerMQTT;
 			packageProductDependencies = (
 				7618093A29E80E75008AABF0 /* CocoaMQTT */,
+				4D0106E72C20B9DF00462FA1 /* SwiftyJSON */,
 			);
 			productName = SwiftUI_MQTT;
-			productReference = 76E2F52825B71BDD00237134 /* SwiftUI_MQTT.app */;
+			productReference = 76E2F52825B71BDD00237134 /* BadgerMQTT.app */;
 			productType = "com.apple.product-type.application";
 		};
-		76E2F53825B71BDE00237134 /* SwiftUI_MQTTTests */ = {
+		76E2F53825B71BDE00237134 /* BadgerMQTTTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E2F55025B71BDE00237134 /* Build configuration list for PBXNativeTarget "SwiftUI_MQTTTests" */;
+			buildConfigurationList = 76E2F55025B71BDE00237134 /* Build configuration list for PBXNativeTarget "BadgerMQTTTests" */;
 			buildPhases = (
 				76E2F53525B71BDE00237134 /* Sources */,
 				76E2F53625B71BDE00237134 /* Frameworks */,
@@ -269,14 +313,14 @@
 			dependencies = (
 				76E2F53B25B71BDE00237134 /* PBXTargetDependency */,
 			);
-			name = SwiftUI_MQTTTests;
+			name = BadgerMQTTTests;
 			productName = SwiftUI_MQTTTests;
-			productReference = 76E2F53925B71BDE00237134 /* SwiftUI_MQTTTests.xctest */;
+			productReference = 76E2F53925B71BDE00237134 /* BadgerMQTTTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		76E2F54325B71BDE00237134 /* SwiftUI_MQTTUITests */ = {
+		76E2F54325B71BDE00237134 /* BadgerMQTTUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E2F55325B71BDE00237134 /* Build configuration list for PBXNativeTarget "SwiftUI_MQTTUITests" */;
+			buildConfigurationList = 76E2F55325B71BDE00237134 /* Build configuration list for PBXNativeTarget "BadgerMQTTUITests" */;
 			buildPhases = (
 				76E2F54025B71BDE00237134 /* Sources */,
 				76E2F54125B71BDE00237134 /* Frameworks */,
@@ -287,9 +331,9 @@
 			dependencies = (
 				76E2F54625B71BDE00237134 /* PBXTargetDependency */,
 			);
-			name = SwiftUI_MQTTUITests;
+			name = BadgerMQTTUITests;
 			productName = SwiftUI_MQTTUITests;
-			productReference = 76E2F54425B71BDE00237134 /* SwiftUI_MQTTUITests.xctest */;
+			productReference = 76E2F54425B71BDE00237134 /* BadgerMQTTUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +358,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 76E2F52325B71BDD00237134 /* Build configuration list for PBXProject "SwiftUI_MQTT" */;
+			buildConfigurationList = 76E2F52325B71BDD00237134 /* Build configuration list for PBXProject "BadgerMQTT" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -325,14 +369,15 @@
 			mainGroup = 76E2F51F25B71BDD00237134;
 			packageReferences = (
 				7618093929E80E75008AABF0 /* XCRemoteSwiftPackageReference "CocoaMQTT" */,
+				4D0106E52C20B99700462FA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 76E2F52925B71BDD00237134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76E2F52725B71BDD00237134 /* SwiftUI_MQTT */,
-				76E2F53825B71BDE00237134 /* SwiftUI_MQTTTests */,
-				76E2F54325B71BDE00237134 /* SwiftUI_MQTTUITests */,
+				76E2F52725B71BDD00237134 /* BadgerMQTT */,
+				76E2F53825B71BDE00237134 /* BadgerMQTTTests */,
+				76E2F54325B71BDE00237134 /* BadgerMQTTUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -371,12 +416,23 @@
 				76E9C21125B87B5000ABC54D /* SettingsView.swift in Sources */,
 				76C85F98269A0852007BDB95 /* TextView.swift in Sources */,
 				76B88D5C268B7DCC0098185D /* ConnectionStatusBar.swift in Sources */,
+				4DA6B6702C20C60200A1592A /* ReminderStore.swift in Sources */,
 				76E2F52E25B71BDD00237134 /* MessagesView.swift in Sources */,
+				4DA6B6682C20C58100A1592A /* EKEventStore+AsyncFetch.swift in Sources */,
+				4DA6B6762C22404500A1592A /* CalEvent.swift in Sources */,
 				76B88D5A268B571D0098185D /* BaseButtonStyle.swift in Sources */,
+				4DA6B66A2C20C5A600A1592A /* AppError.swift in Sources */,
+				4DA6B66E2C20C60200A1592A /* Reminder+EKReminder.swift in Sources */,
 				76E2F56525B72C4B00237134 /* MQTTAppState.swift in Sources */,
+				4DA6B66F2C20C60200A1592A /* Reminder.swift in Sources */,
 				76E2F55D25B71DCD00237134 /* MQTTManager.swift in Sources */,
+				4DA6B6722C20C85400A1592A /* ReminderListView.swift in Sources */,
+				4DA6B6782C22414D00A1592A /* CalEvent + EKEvent.swift in Sources */,
 				76C85F9A269CB5C4007BDB95 /* MQTTTextField.swift in Sources */,
+				4DA6B6742C20E92C00A1592A /* MQTTManager + Badger.swift in Sources */,
 				76E2F52C25B71BDD00237134 /* SwiftUI_MQTTApp.swift in Sources */,
+				4DA6B67C2C2245E100A1592A /* CalEventListView.swift in Sources */,
+				4DA6B67A2C2244BD00A1592A /* SyncView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +457,12 @@
 /* Begin PBXTargetDependency section */
 		76E2F53B25B71BDE00237134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76E2F52725B71BDD00237134 /* SwiftUI_MQTT */;
+			target = 76E2F52725B71BDD00237134 /* BadgerMQTT */;
 			targetProxy = 76E2F53A25B71BDE00237134 /* PBXContainerItemProxy */;
 		};
 		76E2F54625B71BDE00237134 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76E2F52725B71BDD00237134 /* SwiftUI_MQTT */;
+			target = 76E2F52725B71BDD00237134 /* BadgerMQTT */;
 			targetProxy = 76E2F54525B71BDE00237134 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -535,7 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_MQTT/Preview Content\"";
-				DEVELOPMENT_TEAM = 6UT7M6DT43;
+				DEVELOPMENT_TEAM = Z3VCGNG35N;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_MQTT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -543,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anoop.SwiftUI-MQTT1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alealfaro.SwiftUI-MQTT1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -557,7 +613,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_MQTT/Preview Content\"";
-				DEVELOPMENT_TEAM = 6UT7M6DT43;
+				DEVELOPMENT_TEAM = Z3VCGNG35N;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_MQTT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -565,7 +621,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.anoop.SwiftUI-MQTT1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alealfaro.SwiftUI-MQTT1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,7 +646,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_MQTT.app/SwiftUI_MQTT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BadgerMQTT.app/BadgerMQTT";
 			};
 			name = Debug;
 		};
@@ -612,7 +668,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI_MQTT.app/SwiftUI_MQTT";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BadgerMQTT.app/BadgerMQTT";
 			};
 			name = Release;
 		};
@@ -659,7 +715,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76E2F52325B71BDD00237134 /* Build configuration list for PBXProject "SwiftUI_MQTT" */ = {
+		76E2F52325B71BDD00237134 /* Build configuration list for PBXProject "BadgerMQTT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E2F54B25B71BDE00237134 /* Debug */,
@@ -668,7 +724,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E2F54D25B71BDE00237134 /* Build configuration list for PBXNativeTarget "SwiftUI_MQTT" */ = {
+		76E2F54D25B71BDE00237134 /* Build configuration list for PBXNativeTarget "BadgerMQTT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E2F54E25B71BDE00237134 /* Debug */,
@@ -677,7 +733,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E2F55025B71BDE00237134 /* Build configuration list for PBXNativeTarget "SwiftUI_MQTTTests" */ = {
+		76E2F55025B71BDE00237134 /* Build configuration list for PBXNativeTarget "BadgerMQTTTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E2F55125B71BDE00237134 /* Debug */,
@@ -686,7 +742,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E2F55325B71BDE00237134 /* Build configuration list for PBXNativeTarget "SwiftUI_MQTTUITests" */ = {
+		76E2F55325B71BDE00237134 /* Build configuration list for PBXNativeTarget "BadgerMQTTUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E2F55425B71BDE00237134 /* Debug */,
@@ -698,6 +754,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4D0106E52C20B99700462FA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
 		7618093929E80E75008AABF0 /* XCRemoteSwiftPackageReference "CocoaMQTT" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/emqx/CocoaMQTT.git";
@@ -709,6 +773,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4D0106E72C20B9DF00462FA1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D0106E52C20B99700462FA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		7618093A29E80E75008AABF0 /* CocoaMQTT */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7618093929E80E75008AABF0 /* XCRemoteSwiftPackageReference "CocoaMQTT" */;

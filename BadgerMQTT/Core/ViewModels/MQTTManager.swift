@@ -17,6 +17,10 @@ final class MQTTManager: ObservableObject {
     private var topic: String!
     private var username: String!
     private var password: String!
+    
+    //Badger specific variables
+    var badgerPubTopic: String!
+    var badgerSubTopic: String!
 
     @Published var currentAppState = MQTTAppState()
     private var anyCancellable: AnyCancellable?
@@ -60,6 +64,10 @@ final class MQTTManager: ObservableObject {
         mqttClient?.keepAlive = 60
         mqttClient?.delegate = self
     }
+    
+    func isInitialized() -> Bool {
+        return mqttClient != nil
+    }
 
     func connect() {
         if let success = mqttClient?.connect(), success {
@@ -75,6 +83,10 @@ final class MQTTManager: ObservableObject {
     }
 
     func publish(with message: String) {
+        mqttClient?.publish(topic, withString: message, qos: .qos1)
+    }
+    
+    func publishToTopic(topic: String, message: String) {
         mqttClient?.publish(topic, withString: message, qos: .qos1)
     }
 
@@ -126,11 +138,15 @@ extension MQTTManager: CocoaMQTTDelegate {
 
         if ack == .accept {
             currentAppState.setAppConnectionState(state: .connected)
+            if !badgerSubTopic.isEmpty {
+                subscribe(topic: badgerSubTopic)
+            }
         }
     }
 
     func mqtt(_ mqtt: CocoaMQTT, didPublishMessage message: CocoaMQTTMessage, id: UInt16) {
         TRACE("message: \(message.string.description), id: \(id)")
+        currentAppState.addSentMessage(text: message.string.description)
     }
 
     func mqtt(_ mqtt: CocoaMQTT, didPublishAck id: UInt16) {

@@ -17,6 +17,9 @@ struct MessageHistoryTextView: UIViewRepresentable {
         textView.isSelectable = true
         textView.isUserInteractionEnabled = false
         textView.font = UIFont.systemFont(ofSize: 14.0)
+        textView.layer.borderColor = CGColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+        textView.layer.borderWidth = 1.0
+        textView.layer.cornerRadius = 5.0
         
         return textView
     }
